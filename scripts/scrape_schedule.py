@@ -18,21 +18,15 @@ talks = soup.findAll('li')
 out = []
 
 for entry in talks:
-    # container to store all items for the day
-    items = []
-
     # schedule date
     time = entry.find('time').text
 
     # some items are associated with URLs
     for talk in entry.findAll('a'):
-        items.append({'title': talk.text, 'url': talk.attrs.get('href')})
+        out.append({'title': talk.text, 'date': time, 'url': talk.attrs.get('href')})
     # others (e.g. cancelations) are just text
     for talk in entry.findAll('span'):
-        items.append({'title': talk.text, 'url': ''})
-
-    # add to output list
-    out.append({'date': time, 'talks': items})
+        out.append({'title': talk.text, 'date': time, 'url': ''})
 
 # dump JSON to a file
 fp = open('schedule.json', 'w')
