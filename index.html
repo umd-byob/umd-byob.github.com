@@ -34,11 +34,13 @@
     <script type='text/javascript'>
     $(function () {
         // Load authors
-        
+        $.getJSON( "json/authors.json", function(data) {
+            console.dir(data);
+        });
 
         //.Load schedule
         $.getJSON( "json/schedule/2014.json", function(data) {
-        }
+        });
 
         // Fix schedule width
         var scheduleWidth = $("#schedule ul").width();
