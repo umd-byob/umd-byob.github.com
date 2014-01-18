@@ -46,10 +46,10 @@ a.link:hover {
     color: #47959E;
 }
 
-#current, #current a {
+#current-date, #current-date a {
     color: #b8d2d9;
 }
 
-#current time {
+#current-date time {
     color: #CF4F88;
 }

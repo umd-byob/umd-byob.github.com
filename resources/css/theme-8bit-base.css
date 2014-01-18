@@ -30,7 +30,7 @@ a.link {
 /** title **/
 #title-container {
     width:100%;
-    margin: 50px 0 40px 0;
+    margin: 50px 0 15px 0;
     text-align: center;
 }
 #title-left {
@@ -53,7 +53,7 @@ a.link {
 }
 
 #menu {
-    margin: 25px 0;
+    margin: 15px 0 25px 0;
 }
 
 #footer {
@@ -86,7 +86,7 @@ a.link {
     padding-right: 25px;
 }
 
-#current, #current a {
+#current-date, #current-date a {
     font-weight: bold;
 }
 
