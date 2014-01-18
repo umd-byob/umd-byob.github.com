@@ -40,25 +40,32 @@
         $.getJSON( "json/authors.json", function(authors) {
             //.Load schedule
             $.getJSON("json/schedule/2014.json", function(talks) {
+                // Add to schedule
                 $.each(talks, function (i, item) {
+                    var userURL = "#";
+
+                    // Get info for presenter
+                    if (authors[item.author]) {
+                        userURL = "https://github.com/" + authors[item.author].github;
+                    }
+
                     // Entry HTML
                     talkHTML = "<li><time>" + item.date + "</time>" +
                                "<a href='" + item.url + "'>" + item.title + 
-                               "</a></li>";
-
-                    // Add to schedule
+                               "</a>(" + "<a href='" + userURL + "'>" + 
+                               item.author + "</a>)</li>";
                     schedule.append(talkHTML);
                 });
+
+                // Fix schedule width
+                var scheduleWidth = $("#schedule ul").width();
+
+                $(window).resize(function() {
+                    var width = scheduleWidth / $("body").width() * 100;
+                    $('#schedule').width(width + '%');
+                }).trigger('resize');
             });
         });
-
-        // Fix schedule width
-        var scheduleWidth = $("#schedule ul").width();
-
-        $(window).resize(function() {
-            var width = scheduleWidth / $("body").width() * 100;
-            $('#schedule').width(width + '%');
-        }).trigger('resize');
     })
     </script>
 </body>
