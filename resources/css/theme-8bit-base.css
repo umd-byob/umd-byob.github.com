@@ -50,6 +50,13 @@ a.link {
 /** menus **/
 #menu, #footer {
     width: 100%;
+}
+
+#menu {
+    margin: 25px 0;
+}
+
+#footer {
     margin-top: 50px;
 }
 
