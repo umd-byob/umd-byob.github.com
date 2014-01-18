@@ -87,13 +87,17 @@
         // Load authors and schedule
         $.getJSON("json/authors.json", function(authors) {
             loadSchedule("json/schedule/2014.json", authors, "#current");
-            loadSchedule("json/schedule/2013.json", authors, "#current");
+            loadSchedule("json/schedule/2013.json", authors, "#archives");
         });
 
-        // Toggle schedules
-        $("#title-container span").click(function(e) {
-            $("#schedule #current").toggle();
-            $("#schedule #archives").toggle();
+        // Schedule buttons
+        $("#current-link").click(function(e) {
+            $("#schedule #archives").hide();
+            $("#schedule #current").show();
+        });
+        $("#archives-link").click(function(e) {
+            $("#schedule #current").hide();
+            $("#schedule #archives").show();
         });
     });
     </script>
