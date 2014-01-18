@@ -20,6 +20,7 @@
     <!-- schedule -->
     <div id='schedule'>
         <div id='schedule-header'>Schedule (Spring 2014)</div>
+        <ul></ul>
     </div>
 
     <!-- menu -->
@@ -34,7 +35,7 @@
     <script type='text/javascript'>
     $(function () {
         // Schedule container
-        var talkHTML, schedule = $("#schedule");
+        var talkHTML, schedule = $("#schedule ul");
 
         // Load authors and schedule
         $.getJSON( "json/authors.json", function(authors) {
@@ -52,7 +53,7 @@
                     // Entry HTML
                     talkHTML = "<li><time>" + item.date + "</time>" +
                                "<a href='" + item.url + "'>" + item.title + 
-                               "</a>(" + "<a href='" + userURL + "'>" + 
+                               "</a> (" + "<a href='" + userURL + "'>" + 
                                item.author + "</a>)</li>";
                     schedule.append(talkHTML);
                 });
