@@ -1,0 +1,55 @@
+/******************************
+*
+* BYOB Theme: 8-bit dark
+*
+*******************************/
+
+/** body **/
+body {
+    background: #ccdce8;
+    color: #333;
+}
+
+/** title **/
+#title-left {
+    color: #9064e8;
+    text-shadow: -2px 2px 2px #287373;
+}
+#title-right {
+    color: #bce964;
+    text-shadow: -2px 2px 3px #5E468C;
+}
+#meeting-info {
+    color: #9064e8;
+}
+
+/** text **/
+#schedule a {
+    color: #621bb2;
+}
+#schedule a:hover {
+    color: #e864bc;
+}
+a.link {
+    color: #BF85CC;
+}
+a.link:hover {
+    color: #914E89;
+}
+
+/** schedule **/
+#schedule-header {
+    color: #e8647a;
+}
+
+#schedule time {
+    color: #323d1a;
+}
+
+#current, #current a {
+    color: #b8d2d9;
+}
+
+#current time {
+    color: #CF4F88;
+}

@@ -13,7 +13,7 @@ body {
 @font-face
 {
     font-family: eightbit;
-    src: url(8-BIT_WONDER.TTF);
+    src: url(../fonts/8-BIT_WONDER.TTF);
 }
 
 /** text **/
@@ -81,8 +81,8 @@ a.link {
     font-weight: bold;
 }
 
-/** contact */
-#contact-info {
+/** Menubar */
+#menu {
     width: 100%;
     margin-top: 50px;
 }

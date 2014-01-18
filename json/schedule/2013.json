@@ -1,0 +1,98 @@
+[
+    {
+        "date": "9/03",
+        "author": "Keith Hughitt",
+        "title": "Intro Meeting",
+        "url": "http://khughitt.github.io/slidify-byob-intro/#1"
+    },
+    {
+        "date": "9/03",
+        "author": "Jonathan Goodson",
+        "title": "Bacterial Transcriptome Analysis",
+        "url": "http://prezi.com/mtiw5z9i0gfu/copy-of-analysis-of-bacterial-transcriptome-data/"
+    },
+    {
+        "date": "9/03",
+        "author": "Keith Hughitt",
+        "title": "Reproducible Research with Knitr & R",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/0903-knitr_reproducible_research"
+    },
+    {
+        "date": "9/10",
+        "author": "Ted Gibbons",
+        "title": "De Novo Transcriptome Assembly",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/0910-de_novo_transcriptome_assembly"
+    },
+    {
+        "date": "9/17",
+        "author": "Matt Conte",
+        "title": "A (not so) Complete Guide to Genome Browsers",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/0917-genome_browsers"
+    },
+    {
+        "date": "9/24",
+        "author": "Josie Reinhardt",
+        "title": "SNP Calling with RNA-Seq data",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/0924-RNAseq-SNPs"
+    },
+    {
+        "date": "10/01",
+        "author": "Kawther Abdilleh",
+        "title": "Molecular Evolution Analyses using PAML",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1001-molecular_evolution_using_PAML"
+    },
+    {
+        "date": "10/08",
+        "author": "Kevin Nyberg",
+        "title": "Unannotated RNA-Seq transcripts and long noncoding RNA detection: RNAcode and CPAT",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1008-lincRNA_ID_from_RNA-Seq"
+    },
+    {
+        "date": "10/15",
+        "author": "Ashton Trey Belew",
+        "title": "PBS: Please Be Sane",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1015-PBS"
+    },
+    {
+        "date": "10/22",
+        "author": "Chris Hill",
+        "title": "Quality Assurance for WGS and RNA-Seq data",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1022-quality_assurance_wgs_rnaseq"
+    },
+    {
+        "date": "10/29",
+        "author": "Kwame Okrah",
+        "title": "The assumptions behind RNA-Seq normalization methods",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1029-RNA-Seq_normalization_assumptions"
+    },
+    {
+        "date": "11/05",
+        "author": "",
+        "title": "RNA-Seq: Evaluating and Correcting for Batch Effects in RNA-Seq Data",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1105-batch_effects_in_RNA-Seq"
+    },
+    {
+        "date": "11/12",
+        "author": "",
+        "title": "No meeting today",
+        "url": ""
+    },
+    {
+        "date": "11/19",
+        "author": "",
+        "title": "Bioscience Day Keynote Address @ 5pm",
+        "url": "http://www.bioscienceday.umd.edu/schedule-events/keynote-address"
+    },
+    {
+        "date": "11/26",
+        "author": "",
+        "title": "No meeting today",
+        "url": ""
+    },
+    {
+        "date": "12/03",
+        "author": "",
+        "title": "Pipelining in Python (Lee Mendelowitz)",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/1203_piplining_with_python"
+    }
+]
