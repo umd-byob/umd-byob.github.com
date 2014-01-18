@@ -47,8 +47,10 @@ a.link {
     font-size: 12px;
 }
 
-/** menu **/
-#menu {
+/** menus **/
+#menu, #footer {
+    width: 100%;
+    margin-top: 50px;
 }
 
 /** schedule **/
@@ -79,11 +81,5 @@ a.link {
 
 #current, #current a {
     font-weight: bold;
-}
-
-/** Menubar */
-#menu {
-    width: 100%;
-    margin-top: 50px;
 }
 

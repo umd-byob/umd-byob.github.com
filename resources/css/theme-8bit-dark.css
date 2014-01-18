@@ -38,7 +38,7 @@ a.link:hover {
 }
 
 /** schedule **/
-#schedule-header {
+.schedule-header {
     color: #BF85CC;
 }
 
