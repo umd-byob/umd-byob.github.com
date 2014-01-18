@@ -19,7 +19,7 @@
 
     <!-- schedule -->
     <div id='schedule'>
-        <div id='schedule-header'>Schedule (Fall 2013)</div>
+        <div id='schedule-header'>Schedule (Spring 2014)</div>
     </div>
 
     <!-- menu -->
@@ -33,13 +33,23 @@
     <!-- js -->
     <script type='text/javascript'>
     $(function () {
-        // Load authors
-        $.getJSON( "json/authors.json", function(data) {
-            console.dir(data);
-        });
+        // Schedule container
+        var talkHTML, schedule = $("#schedule");
 
-        //.Load schedule
-        $.getJSON( "json/schedule/2014.json", function(data) {
+        // Load authors and schedule
+        $.getJSON( "json/authors.json", function(authors) {
+            //.Load schedule
+            $.getJSON("json/schedule/2014.json", function(talks) {
+                $.each(talks, function (i, item) {
+                    // Entry HTML
+                    talkHTML = "<li><time>" + item.date + "</time>" +
+                               "<a href='" + item.url + "'>" + item.title + 
+                               "</a></li>";
+
+                    // Add to schedule
+                    schedule.append(talkHTML);
+                });
+            });
         });
 
         // Fix schedule width
