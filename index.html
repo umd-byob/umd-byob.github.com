@@ -47,41 +47,55 @@
 
     <!-- js -->
     <script type='text/javascript'>
-    $(function () {
+    // Function to load schedule JSON
+    var loadScheduleJSON = function (url, authors, container) {
         // Schedule container
-        var talkHTML, schedule = $("#schedule ul");
+        var talkHTML, schedule = $(container).find("ul");
 
-        // Load authors and schedule
-        $.getJSON( "json/authors.json", function(authors) {
-            //.Load schedule
-            $.getJSON("json/schedule/2013.json", function(talks) {
-                // Add to schedule
-                $.each(talks, function (i, item) {
-                    var userURL = "#";
+        //.Load schedule
+        $.getJSON(url, function(talks) {
+            // Add to schedule
+            $.each(talks, function (i, item) {
+                var userURL = "#";
 
-                    // Get info for presenter
-                    if (authors[item.author]) {
-                        userURL = "https://github.com/" + authors[item.author].github;
-                    }
+                // Get info for presenter
+                if (authors[item.author]) {
+                    userURL = "https://github.com/" + authors[item.author].github;
+                }
 
-                    // Entry HTML
-                    talkHTML = "<li><time>" + item.date + "</time>" +
-                               "<a href='" + item.url + "'>" + item.title + 
-                               "</a> (" + "<a href='" + userURL + "'>" + 
-                               item.author + "</a>)</li>";
-                    schedule.append(talkHTML);
-                });
+                // Entry HTML
+                talkHTML = "<li><time>" + item.date + "</time>" +
+                            "<a href='" + item.url + "'>" + item.title + 
+                            "</a> (" + "<a href='" + userURL + "'>" + 
+                            item.author + "</a>)</li>";
+                schedule.append(talkHTML);
+            });
 
-                // Fix schedule width
-                var scheduleWidth = $("#schedule ul").width();
+            // Fix schedule width
+            if (container == '#current') {
+                var scheduleWidth = schedule.width();
 
                 $(window).resize(function() {
                     var width = scheduleWidth / $("body").width() * 100;
                     $('#schedule').width(width + '%');
                 }).trigger('resize');
-            });
+            };
         });
-    })
+    };
+
+    $(function () {
+        // Load authors and schedule
+        $.getJSON("json/authors.json", function(authors) {
+            loadSchedule("json/schedule/2014.json", authors, "#current");
+            loadSchedule("json/schedule/2013.json", authors, "#current");
+        });
+
+        // Toggle schedules
+        $("#title-container span").click(function(e) {
+            $("#schedule #current").toggle();
+            #("#schedule #archives").toggle();
+        });
+    });
     </script>
 </body>
 </html>
