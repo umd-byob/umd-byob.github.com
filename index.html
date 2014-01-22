@@ -57,16 +57,20 @@
             $.each(talks, function (i, item) {
                 var userURL = "#";
 
-                // Get info for presenter
-                if (authors[item.author]) {
-                    userURL = "https://github.com/" + authors[item.author].github;
-                }
-
                 // Entry HTML
                 talkHTML = "<li><time>" + item.date + "</time>" +
                             "<a href='" + item.url + "'>" + item.title + 
-                            "</a> | " + "<a href='" + userURL + "'>" + 
-                            item.author + "</a></li>";
+                            "</a>";
+
+                // Include author if specified
+                if (authors[item.author]) {
+                    userURL = "https://github.com/" + authors[item.author].github;
+                    talkHTML += " | " + "<a href='" + userURL + "'>" + 
+                                item.author + "</a>";
+                }
+
+                // Add schedule entry
+                talkHTML += "</li>";
                 schedule.append(talkHTML);
             });
 

@@ -67,7 +67,7 @@
     },
     {
         "date": "11/05",
-        "author": "",
+        "author": "Laura Dillon",
         "title": "RNA-Seq: Evaluating and Correcting for Batch Effects in RNA-Seq Data",
         "url": "https://github.com/umd-byob/presentations/tree/master/2013/1105-batch_effects_in_RNA-Seq"
     },
@@ -91,8 +91,8 @@
     },
     {
         "date": "12/03",
-        "author": "",
-        "title": "Pipelining in Python (Lee Mendelowitz)",
+        "author": "Lee Mendelowitz",
+        "title": "Pipelining in Python",
         "url": "https://github.com/umd-byob/presentations/tree/master/2013/1203_piplining_with_python"
     }
 ]
