@@ -40,10 +40,10 @@ body {
     color: #621bb2;
 }
 #schedule a:last-of-type {
-    color: #ff8985;
+    color: #2e8b57;
 }
 #schedule a:last-of-type:hover {
-    color: #ff1a12;
+    color: #8c2e64;
 }
 
 a.link {
