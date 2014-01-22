@@ -40,10 +40,10 @@ body {
 #schedule a:hover {
     color: #ff1298;
 }
-#schedule a:last-of-type {
+#schedule a:nth-of-type(2) {
     color: #2e8b57;
 }
-#schedule a:last-of-type:hover {
+#schedule a:nth-of-type(2):hover {
     color: #8c2e64;
 }
 
