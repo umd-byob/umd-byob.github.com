@@ -34,10 +34,10 @@ body {
 
 /** text **/
 #schedule a {
-    color: #621bb2;
+    color: #1299ff;
 }
 #schedule a:hover {
-    color: #e864bc;
+    color: #621bb2;
 }
 a.link {
     color: #084675;
@@ -45,6 +45,13 @@ a.link {
 a.link:hover {
     color: #cc0e7a;
 }
+li a:last-of-type {
+    color: #ff8985;
+}
+li a:last-of-type:hover {
+    color: #ff1a12;
+}
+
 
 /** schedule **/
 .schedule-header {
@@ -52,7 +59,7 @@ a.link:hover {
 }
 
 #schedule time {
-    color: #323d1a;
+    color: #009947;
 }
 
 #current-date, #current-date a {

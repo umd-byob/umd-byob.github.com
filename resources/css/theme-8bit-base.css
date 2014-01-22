@@ -63,7 +63,7 @@ a.link {
 /** schedule **/
 
 #schedule {
-    width: 930px;
+    width: 675px; /**930px;*/
     white-space: nowrap;
     font-size: 15px;
     font-family: verdana, bitstream vera sans, sans-serif;
