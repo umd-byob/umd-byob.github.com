@@ -29,7 +29,7 @@ body {
     text-shadow: -2px 2px 3px #999;
 }
 #meeting-info {
-    color: #00b253;
+    color: #cc006d;
 }
 
 /** text **/
@@ -39,19 +39,19 @@ body {
 #schedule a:hover {
     color: #621bb2;
 }
+#schedule a:last-of-type {
+    color: #ff8985;
+}
+#schedule a:last-of-type:hover {
+    color: #ff1a12;
+}
+
 a.link {
     color: #084675;
 }
 a.link:hover {
     color: #cc0e7a;
 }
-li a:last-of-type {
-    color: #ff8985;
-}
-li a:last-of-type:hover {
-    color: #ff1a12;
-}
-
 
 /** schedule **/
 .schedule-header {
@@ -59,7 +59,7 @@ li a:last-of-type:hover {
 }
 
 #schedule time {
-    color: #009947;
+    color: #0c64a8;
 }
 
 #current-date, #current-date a {
