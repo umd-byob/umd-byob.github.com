@@ -6,21 +6,30 @@
 
 /** body **/
 body {
-    background: #ccdce8;
-    color: #333;
+    background-color: white;
+}
+
+/** font **/
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(http://themes.googleusercontent.com/static/fonts/frederickathegreat/v3/7Es8Lxoku-e5eOZWpxw18vc3vBAn7YvtW9hNjxWZBR0.woff) format('woff');
 }
 
 /** title **/
 #title-left {
-    color: #9064e8;
-    text-shadow: -2px 2px 2px #287373;
+    color: #0c64a8;
+    text-shadow: -2px 2px 2px #333;
 }
 #title-right {
-    color: #bce964;
-    text-shadow: -2px 2px 3px #5E468C;
+    font-family: Fredericka the Great, courier new, monospace, sans-serif;
+    font-size: 75px;
+    color: #1299ff;
+    text-shadow: -2px 2px 3px #999;
 }
 #meeting-info {
-    color: #9064e8;
+    color: #00b253;
 }
 
 /** text **/
@@ -31,15 +40,15 @@ body {
     color: #e864bc;
 }
 a.link {
-    color: #BF85CC;
+    color: #084675;
 }
 a.link:hover {
-    color: #914E89;
+    color: #cc0e7a;
 }
 
 /** schedule **/
 .schedule-header {
-    color: #e8647a;
+    color:#00b253;
 }
 
 #schedule time {
