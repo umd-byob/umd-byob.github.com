@@ -8,7 +8,19 @@
     {
         "date": "1/28",
         "author": "Lee Mendelowitz",
-        "title": "How Git Works",
+        "title": "Git under the hood",
+        "url": ""
+    },
+    {
+        "date": "2/04",
+        "author": "",
+        "title": "No meeting today (BISI recruitment)",
+        "url": ""
+    },
+    {
+        "date": "2/11",
+        "author": "Steve Mount",
+        "title": "TBA",
         "url": ""
     }
 ]
