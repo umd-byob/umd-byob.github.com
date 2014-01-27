@@ -106,10 +106,20 @@
     };
 
     $(function () {
+        // Don't cache JSON results
+        //$.ajaxSetup({ cache: false });
+
         // Load authors and schedule
-        $.getJSON("json/authors.json", function(authors) {
-            loadSchedule("json/schedule/2014.json", authors, "#current");
-            loadSchedule("json/schedule/2013.json", authors, "#archives");
+        $.ajax({
+            url: "json/authors.json", 
+            success: function(authors) {
+                loadSchedule("json/schedule/2014.json", authors, "#current");
+                loadSchedule("json/schedule/2013.json", authors, "#archives");
+            },
+            error: function (jq, status, err) {
+                console.log(err);
+            },
+            dataType: 'json'
         });
 
         // Schedule buttons
