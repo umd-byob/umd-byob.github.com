@@ -1,39 +1,34 @@
 {
-    "Keith Hughitt": {
-        "github": "khughitt",
-        "email": "khughitt@umd.edu"
-    },
-    "Jonathan Goodson" : {
-        "github": "jgoodson",
+    "Kawther Abdilleh": {
+        "github": "kabdilleh",
         "email": ""
+    },
+    "Ashton Trey Belew": {
+        "github": "abelew",
+        "email": ""
+    },
+    "Matt Conte": {
+        "github": "conte1",
+        "email": ""
+    },
+    "Laura Dillon": {
+        "email": "dillonl@umd.edu"
     },
     "Ted Gibbons": {
         "github": "trgibbons",
         "email": ""
     },
-    "Matthew Conte": {
-        "github": "conte1",
+    "Jonathan Goodson" : {
+        "github": "jgoodson",
         "email": ""
     },
-    "Josie Reinhardt": {
-        "github": "JosieRenhardt",
-        "email": ""
-    },
-    "Kawther Abdilleh": {
-        "github": "kabdilleh",
-        "email": ""
-    },
-    "Kevin Nybert": {
-        "github": "kevingnyberg",
-        "email": ""
-    },
-    "Trey Belew": {
-        "github": "abelew",
-        "email": ""
-    },
-    "Kwame Okrah": {
-        "github": "kokrah",
-        "email": ""
+    "Chris Hill": {
+        "github": "cmhill",
+        "email": "cmhill@umd.edu"
+    }
+    "Keith Hughitt": {
+        "github": "khughitt",
+        "email": "khughitt@umd.edu"
     },
     "Lee Mendelowitz": {
         "github": "LeeMendelowitz",
@@ -41,6 +36,18 @@
     },
     "Steve Mount": {
         "email": "steve@stevemount.info"
+    },
+    "Kevin Nyberg": {
+        "github": "kevingnyberg",
+        "email": ""
+    },
+    "Kwame Okrah": {
+        "github": "kokrah",
+        "email": ""
+    },
+    "Josie Reinhardt": {
+        "github": "JosieRenhardt",
+        "email": ""
     }
 }
 
