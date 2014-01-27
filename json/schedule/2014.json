@@ -8,7 +8,7 @@
     {
         "date": "2/04",
         "author": "Lee Mendelowitz",
-        "title": "Git under the hood",
+        "title": "Git under the Hood",
         "url": ""
     },
     {
@@ -20,7 +20,7 @@
     {
         "date": "2/18",
         "author": "Steve Mount",
-        "title": "FPKM, RPKM, KPKM, TPM, TMM and other RNA-Seq normalization issues",
+        "title": "FPKM, RPKM, KPKM, TPM, TMM and Other RNA-Seq Normalization Issues",
         "url": ""
     }
 ]
