@@ -31,6 +31,7 @@ body {
 }
 #meeting-info {
     color: #cc006d;
+    font-family: Verdana, "Bitstream Vera Sans", sans-serif;
 }
 
 /** text **/
@@ -56,7 +57,8 @@ a.link:hover {
 
 /** schedule **/
 .schedule-header {
-    color:#00b253;
+    color:#00A84E;
+    font-weight: 700;
 }
 
 #schedule time {

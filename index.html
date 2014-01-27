@@ -49,7 +49,12 @@
     // Function to load schedule JSON
     var loadSchedule = function (url, authors, container) {
         // Schedule container
-        var talkHTML, schedule = $(container).find("ul");
+        var talkDate, talkHTML,
+            dateHighlighted = false,
+            schedule = $(container).find("ul"),
+            now      = new Date(),
+            today    = parseInt(String(today.getMonth() + 1) +
+                                String(today.getDate()), 10)
 
         //.Load schedule
         $.getJSON(url, function(talks) {
@@ -57,14 +62,27 @@
             $.each(talks, function (i, item) {
                 var userURL = "#";
 
+                // Highlight date if it is next talk
+                talkDate = parseInt(item.date.replace("/", ""), 10);
+
+                if (!dateHighlighted && (talkDate >= today)) {
+                    talkHTML = "<li id='current-date'>";
+                    dateHighlighted = true;
+                } else {
+                    talkHTML = "<li>"
+                }
+
                 // Entry HTML
-                talkHTML = "<li><time>" + item.date + "</time>" +
+                talkHTML += <time>" + item.date + "</time>" +
                             "<a href='" + item.url + "'>" + item.title + 
                             "</a>";
 
                 // Include author if specified
                 if (authors[item.author]) {
-                    userURL = "https://github.com/" + authors[item.author].github;
+                    // Github homepage
+                    if (authors[item.author].github) {
+                        userURL = "https://github.com/" + authors[item.author].github;
+                    }
                     talkHTML += " | " + "<a href='" + userURL + "'>" + 
                                 item.author + "</a>";
                 }
