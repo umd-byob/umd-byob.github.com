@@ -124,13 +124,21 @@
 
         // Schedule buttons
         $("#current-link").click(function(e) {
+            window.history.pushState("", "Current", "/#");
             $("#schedule #archives").hide();
             $("#schedule #current").show();
         });
         $("#archives-link").click(function(e) {
+            window.history.pushState("", "Archives", "/#archives");
             $("#schedule #current").hide();
             $("#schedule #archives").show();
         });
+
+        // Load archives if set in location
+        if (window.location.hash == "#archives") {
+            $("#schedule #current").hide();
+            $("#schedule #archives").show();
+        }
     });
     </script>
 </body>
