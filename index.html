@@ -53,8 +53,8 @@
             dateHighlighted = false,
             schedule = $(container).find("ul"),
             now      = new Date(),
-            today    = parseInt(String(today.getMonth() + 1) +
-                                String(today.getDate()), 10)
+            today    = parseInt(String(now.getMonth() + 1) +
+                                String(now.getDate()), 10)
 
         //.Load schedule
         $.getJSON(url, function(talks) {
