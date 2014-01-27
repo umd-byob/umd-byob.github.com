@@ -117,7 +117,7 @@
                 loadSchedule("json/schedule/2013.json", authors, "#archives");
             },
             error: function (jq, status, err) {
-                console.log(err);
+                console.log("Error loading author information; check JSON syntax");
             },
             dataType: 'json'
         });
