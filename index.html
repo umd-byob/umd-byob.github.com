@@ -80,7 +80,7 @@
                 // Include author if specified
                 if (authors[item.author]) {
                     // Github homepage
-                    if (authors[item.author].github) {
+                    if (typeof authors[item.author].github !== "undefined") {
                         userURL = "https://github.com/" + authors[item.author].github;
                     }
                     talkHTML += " | " + "<a href='" + userURL + "'>" + 
