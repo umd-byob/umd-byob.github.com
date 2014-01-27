@@ -1,24 +1,24 @@
 [
     {
-        "date": "1/21",
+        "date": "1/28",
         "author": "Keith Hughitt",
         "title": "Introduction to Git and Github",
         "url": ""
     },
     {
-        "date": "1/28",
+        "date": "2/04",
         "author": "Lee Mendelowitz",
         "title": "Git under the hood",
         "url": ""
     },
     {
-        "date": "2/04",
+        "date": "2/11",
         "author": "",
         "title": "No meeting today (BISI recruitment)",
         "url": ""
     },
     {
-        "date": "2/11",
+        "date": "2/18",
         "author": "Steve Mount",
         "title": "FPKM, RPKM, KPKM, TPM, TMM and other RNA-Seq normalization issues",
         "url": ""
