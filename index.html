@@ -129,6 +129,7 @@
             $("#schedule #current").show();
         });
         $("#archives-link").click(function(e) {
+            // @TODO: fix state handling
             window.history.pushState("", "Archives", "/#archives");
             $("#schedule #current").hide();
             $("#schedule #archives").show();
