@@ -60,6 +60,20 @@ a.link {
     margin-top: 50px;
 }
 
+/** logos **/
+#footer-logos {
+    margin: 15px 0;
+}
+#footer-logos img {
+    margin: 0 10px;
+}
+#logo-umd {
+    height: 38px;
+}
+#logo-cbcb {
+    height: 40px;
+}
+
 /** schedule **/
 
 #schedule {
