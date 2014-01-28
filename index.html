@@ -89,18 +89,22 @@
                 }
 
                 // Entry HTML
-                talkHTML += "<time>" + item.date + "</time>" +
-                            "<a href='" + item.url + "'>" + item.title + 
-                            "</a>";
+                talkHTML += "<time>" + item.date + "</time>";
 
                 // Include author if specified
                 if (authors[item.author]) {
-                    // Github homepage
+                    // Talk title
+                    talkHTML += "<a href='" + item.url + "'>" + item.title + "</a>";
+
+                    // User homepage
                     if (typeof authors[item.author].github !== "undefined") {
                         userURL = "https://github.com/" + authors[item.author].github;
                     }
                     talkHTML += " | " + "<a href='" + userURL + "'>" + 
                                 item.author + "</a>";
+                } else {
+                    // Style non-talk entries differently
+                    talkHTML += item.title;
                 }
 
                 // Add schedule entry
