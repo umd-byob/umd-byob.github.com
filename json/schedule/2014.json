@@ -25,29 +25,34 @@
     },
     {
         "date": "2/25",
-        "author": "Lee Mendelowitz",
-        "title": "Git under the Hood",
-        "url": ""
+        "author": "",
+        "title": "No meeting today"
     },
     {
         "date": "3/04",
         "author": "",
-        "title": "TBA"
+        "title": "No meeting today"
+    },
+    {
+        "date": "3/11",
+        "author": "Lee Mendelowitz",
+        "title": "Git under the Hood",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2014/0225-git_with_confidence"
     },
     {
         "date": "3/11",
         "author": "",
-        "title": "TBA"
+        "title": "No meeting today"
     },
     {
         "date": "3/18",
         "author": "",
-        "title": "TBA"
+        "title": "No meeting today"
     },
     {
         "date": "3/25",
         "author": "",
-        "title": "TBA"
+        "title": "BYOB planning / social meeting"
     },
     {
         "date": "4/01",
