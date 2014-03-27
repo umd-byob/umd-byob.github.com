@@ -6,18 +6,6 @@
         "url": "https://github.com/umd-byob/presentations/tree/master/2014/0128-into_to_git"
     },
     {
-        "date": "2/04",
-        "author": "",
-        "title": "No meeting today (BISI recruitment)",
-        "url": ""
-    },
-    {
-        "date": "2/11",
-        "author": "",
-        "title": "No meeting today (BISI recruitment)",
-        "url": ""
-    },
-    {
         "date": "2/18",
         "author": "Steve Mount",
         "title": "FPKM, RPKM, KPKM, TPM, TMM and Other RNA-Seq Normalization Issues",
@@ -30,25 +18,10 @@
         "url": ""
     },
     {
-        "date": "3/04",
-        "author": "",
-        "title": "No meeting today"
-    },
-    {
         "date": "3/11",
         "author": "Lee Mendelowitz",
         "title": "Git under the Hood",
         "url": "https://github.com/umd-byob/presentations/tree/master/2014/0311-git_with_confidence"
-    },
-    {
-        "date": "3/11",
-        "author": "",
-        "title": "No meeting today"
-    },
-    {
-        "date": "3/18",
-        "author": "",
-        "title": "No meeting today"
     },
     {
         "date": "3/25",
