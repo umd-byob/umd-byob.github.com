@@ -42,7 +42,8 @@
     {
         "date": "4/22",
         "author": "Will Gammerdinger",
-        "title": "SNPeff / SNPsift"
+        "title": "Prediction of functional variants using SnpEff/SnpSift",
+        "The talk will be a short discussion on using SnpEff/SnpSift to annotate functional variants from genome-wide data sets. It will have a short demonstration to illustrate the flexibility of the software and show what types of variants it can identify."
     },
     {
         "date": "4/29",
