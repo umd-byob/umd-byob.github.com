@@ -14,7 +14,7 @@
     {
         "date": "3/11",
         "author": "Lee Mendelowitz",
-        "title": "Git under the Hood",
+        "title": "Git with Confidence",
         "url": "https://github.com/umd-byob/presentations/tree/master/2014/0311-git_with_confidence"
     },
     {
@@ -52,8 +52,8 @@
     },
     {
         "date": "5/06",
-        "author": "",
-        "title": "TBA"
+        "author": "Kwame Okrah",
+        "title": "Customizing  R plots"
     },
     {
         "date": "5/13",
@@ -67,12 +67,7 @@
     },
     {
         "date": "5/27",
-        "author": "",
-        "title": "TBA"
-    },
-    {
-        "date": "6/03",
-        "author": "",
+        "author": "Joyce Hsiao",
         "title": "TBA"
     }
 ]
