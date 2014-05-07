@@ -31,13 +31,15 @@
         "date": "4/08",
         "author": "Ted Gibbons",
         "title": "Understanding the OrthoMCL pipeline",
-        "abstract": "The OrthoMCL pipeline was introduced over a decade ago and remains one of the most popular approaches for clustering (protein) sequences.  Several variants of the pipeline have since been published, but the major steps remain unchanged.  In this first session, I will explain each step of the OrthoMCL pipeline in detail."
+        "abstract": "The OrthoMCL pipeline was introduced over a decade ago and remains one of the most popular approaches for clustering (protein) sequences.  Several variants of the pipeline have since been published, but the major steps remain unchanged.  In this first session, I will explain each step of the OrthoMCL pipeline in detail.",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2014/0408-sequence-clustering"
     },
     {
         "date": "4/15",
         "author": "Ted Gibbons",
         "title": "Effects of graph weighting parameters and inflation values on clustering",
-        "abstract": "The primary differences between the various flavors of the OrthoMCL pipeline are the metrics used to weight the graph and/or MCL inflation parameter value(s).  The effects of these differences can be very difficult to understand and the corresponding publications provide very little, if any, helpful information.  I have therefore systematically explored the effects of these parameters on clustering a subset of sequences from the euKaryotic Orthologous Groups (KOG) database, simulating the fragmentation that commonly results from modern high-throughput sequencing projects."
+        "abstract": "The primary differences between the various flavors of the OrthoMCL pipeline are the metrics used to weight the graph and/or MCL inflation parameter value(s).  The effects of these differences can be very difficult to understand and the corresponding publications provide very little, if any, helpful information.  I have therefore systematically explored the effects of these parameters on clustering a subset of sequences from the euKaryotic Orthologous Groups (KOG) database, simulating the fragmentation that commonly results from modern high-throughput sequencing projects.",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2014/0408-sequence-clustering"
     },
     {
         "date": "4/22",
@@ -54,7 +56,7 @@
         "date": "5/06",
         "author": "Kwame Okrah",
         "title": "The Traditional R Graphical System",
-        "url": "https://github.com/umd-byob/presentations/tree/master/2014/0506-R-graphics"
+        "url": "https://github.com/umd-byob/presentations/tree/master/2014/0506-r-graphics"
     },
     {
         "date": "5/13",
