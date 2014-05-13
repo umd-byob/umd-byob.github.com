@@ -50,7 +50,8 @@
     {
         "date": "4/29",
         "author": "Josie Reinhardt",
-        "title": "Tools for detecting insertions, deletions, and other CNVs using Illumina data"
+        "title": "Tools for detecting insertions, deletions, and other CNVs using Illumina data",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2014/0429-tools-for-cnv-detection"
     },
     {
         "date": "5/06",
