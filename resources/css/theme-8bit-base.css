@@ -46,6 +46,23 @@ a.link {
 #meeting-info {
     font-size: 12px;
 }
+#title-left-img {
+    position: relative;
+    top: 44px;
+    width: 128px;
+}
+#title-right-img-a {
+    position: relative;
+    top: 20px;
+    height: 105px;
+}
+#title-right-img-b {
+    display: none;
+    position: relative;
+    top: 16px;
+    height: 94px;
+    margin-left: 6px;
+}
 
 /** menus **/
 #menu, #footer {

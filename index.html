@@ -6,32 +6,45 @@
     <meta name="keywords" content="UMD, BYOB, bioinformatics, computational biology, research, genomics, transcriptomics, python, R" />
     <title>University of Maryland - Bring Your Own Bioinformatics (UMD BYOB)</title>
     <link rel='stylesheet' href='resources/css/theme-8bit-base.css' />
-    <link rel='stylesheet' href='resources/css/theme-8bit-spring.css' />
+    <link rel='stylesheet' href='resources/css/theme-8bit-dark.css' />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 </head>
 <body>
-    <!-- title -->
     <div id='title-container'>
+        <!-- source: http://monoculus.blogspot.com/2012/08/8bit-icon-attack-standard.html -->
+        <img id='title-left-img' src='resources/img/MyComputerLaptop.png'
+            alt='computer' />
         <span id='title-left'>UMD</span>
         <span id='title-right'>BYOB</span>
-        <div id='meeting-info'>Meetings: Tuesday @ 4pm (BRB 3101)</div>
+        <!-- source: http://www.gamenguide.com/articles/5329/20130226/minecraft-breaking-bad.htm -->
+        <img id='title-right-img-a' src='resources/img/8bit_beaker-dark-c.png'
+            alt='science beaker' />
+        <!-- source: http://www.spreadshirt.com/beer-8bit-C3376A16153836#/ -->
+        <img id='title-right-img-b' src='resources/img/8bit_beer.png'
+            alt='beer mug' />
+        <div id='meeting-info'>Meetings: Tuesday @ (TBA)</div>
     </div>
 
     <!-- menu -->
     <div id='menu'>
         <a id='current-link' class='link' href='#'>Current</a> |
-        <a id='archives-link' class='link' href='#'>Archives</a>
+        <a id='spring-2014-link' class='link' href='#'>Spring 2014</a>
+        <a id='fall-2013-link' class='link' href='#'>Fall 2013</a>
     </div>
 
     <!-- schedule -->
     <div id='schedule'>
         <!-- Current schedule -->
         <div id='current' style='height: 450px;'>
-            <div class='schedule-header'>Schedule (Spring 2014)</div>
+            <div class='schedule-header'>Schedule (Fall 2014)</div>
             <ul></ul>
         </div>
         <!-- Previous semesters -->
-        <div id='archives' style='display:none;'>
+        <div id='spring-2014' class='archives' style='display:none;'>
+            <div class='schedule-header'>Schedule (Spring 2014)</div>
+            <ul></ul>
+        </div>
+        <div id='fall-2013' class='archives' style='display:none;'>
             <div class='schedule-header'>Schedule (Fall 2013)</div>
             <ul></ul>
         </div>
@@ -49,11 +62,11 @@
         <!-- Logos -->
         <div id='footer-logos'>
             <a href='http://www.umd.edu/'>
-                <img id='logo-umd' src='resources/img/umd-primary.gif'
+                <img id='logo-umd' src='resources/img/umd-primary-dark.png'
                     alt='University of Maryland, College Park Logo' />
             </a>
             <a href='https://www.cbcb.umd.edu/'>
-                <img id='logo-cbcb' src='resources/img/new-cbcb-logo3_0.png' 
+                <img id='logo-cbcb' src='resources/img/new-cbcb-logo3_0-dark.png' 
                     alt='UMD Center for Bioinformatics and Computational Biology logo' />
             </a>
         </div>
@@ -134,12 +147,19 @@
         // Don't cache JSON results
         //$.ajaxSetup({ cache: false });
 
+        // Toggle title image
+        if (Math.random() < 0.15) {
+            $("#title-right-img-a").hide()        
+            $("#title-right-img-b").show()        
+        }
+
         // Load authors and schedule
         $.ajax({
             url: "json/authors.json", 
             success: function(authors) {
-                loadSchedule("json/schedule/2014.json", authors, "#current");
-                loadSchedule("json/schedule/2013.json", authors, "#archives");
+                loadSchedule("json/schedule/fall-2014.json", authors, "#current");
+                loadSchedule("json/schedule/spring-2014.json", authors, "#spring-2014");
+                loadSchedule("json/schedule/fall-2013.json", authors, "fall-2013");
             },
             error: function (jq, status, err) {
                 console.log("Error loading author information; check JSON syntax");
@@ -150,20 +170,30 @@
         // Schedule buttons
         $("#current-link").click(function(e) {
             window.history.pushState("", "Current", "/#");
-            $("#schedule #archives").hide();
+            $("#schedule .archives").hide();
             $("#schedule #current").show();
         });
-        $("#archives-link").click(function(e) {
+        $("#spring-2014").click(function(e) {
             // @TODO: fix state handling
-            window.history.pushState("", "Archives", "/#archives");
+            window.history.pushState("", "Spring2014", "/#spring-2014");
             $("#schedule #current").hide();
-            $("#schedule #archives").show();
+            $("#schedule #spring-2014").show();
+        });
+        $("#fall-2013").click(function(e) {
+            window.history.pushState("", "Fall2013", "/#fall-2013");
+            $("#schedule #current").hide();
+            $("#schedule #fall-2013").show();
         });
 
-        // Load archives if set in location
-        if (window.location.hash == "#archives") {
+        // Load Spring 2014 schedule if set in location
+        if (window.location.hash == "#spring-2014") {
             $("#schedule #current").hide();
-            $("#schedule #archives").show();
+            $("#schedule #spring-2014").show();
+        }
+        // Load Fall 2013 if set in location
+        if (window.location.hash == "#fall-2013") {
+            $("#schedule #current").hide();
+            $("#schedule #fall-2013").show();
         }
     });
     </script>
