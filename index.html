@@ -40,11 +40,11 @@
             <ul></ul>
         </div>
         <!-- Previous semesters -->
-        <div id='spring-2014' class='archives' style='display:none;'>
+        <div id='spring-2014' class='schedule-section' style='display:none;'>
             <div class='schedule-header'>Schedule (Spring 2014)</div>
             <ul></ul>
         </div>
-        <div id='fall-2013' class='archives' style='display:none;'>
+        <div id='fall-2013' class='schedule-section' style='display:none;'>
             <div class='schedule-header'>Schedule (Fall 2013)</div>
             <ul></ul>
         </div>
@@ -170,29 +170,29 @@
         // Schedule buttons
         $("#current-link").click(function(e) {
             window.history.pushState("", "Current", "/#");
-            $("#schedule .archives").hide();
+            $("#schedule .schedule-section").hide();
             $("#schedule #current").show();
         });
         $("#spring-2014-link").click(function(e) {
             // @TODO: fix state handling
             window.history.pushState("", "Spring2014", "/#spring-2014");
-            $("#schedule #current").hide();
+            $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
         });
         $("#fall-2013-link").click(function(e) {
             window.history.pushState("", "Fall2013", "/#fall-2013");
-            $("#schedule #current").hide();
+            $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
         });
 
         // Load Spring 2014 schedule if set in location
         if (window.location.hash == "#spring-2014") {
-            $("#schedule #current").hide();
+            $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
         }
         // Load Fall 2013 if set in location
         if (window.location.hash == "#fall-2013") {
-            $("#schedule #current").hide();
+            $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
         }
     });
