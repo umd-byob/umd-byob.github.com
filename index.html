@@ -173,13 +173,13 @@
             $("#schedule .archives").hide();
             $("#schedule #current").show();
         });
-        $("#spring-2014").click(function(e) {
+        $("#spring-2014-link").click(function(e) {
             // @TODO: fix state handling
             window.history.pushState("", "Spring2014", "/#spring-2014");
             $("#schedule #current").hide();
             $("#schedule #spring-2014").show();
         });
-        $("#fall-2013").click(function(e) {
+        $("#fall-2013-link").click(function(e) {
             window.history.pushState("", "Fall2013", "/#fall-2013");
             $("#schedule #current").hide();
             $("#schedule #fall-2013").show();
