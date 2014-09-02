@@ -169,18 +169,20 @@
 
         // Schedule buttons
         $("#current-link").click(function(e) {
-            window.history.pushState("", "Current", "/#");
+            window.location.hash = '';
+            window.history.pushState(null, "BYOB: Current schedule", "");
             $("#schedule .schedule-section").hide();
             $("#schedule #current").show();
         });
         $("#spring-2014-link").click(function(e) {
-            // @TODO: fix state handling
-            window.history.pushState("", "Spring2014", "/#spring-2014");
+            window.location.hash = 'spring-2014';
+            window.history.pushState(null, "BYOB: Spring 2014", "spring-2014");
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
         });
         $("#fall-2013-link").click(function(e) {
-            window.history.pushState("", "Fall2013", "/#fall-2013");
+            window.location.hash = 'fall-2013';
+            window.history.pushState(null, "BYOB: Fall 2013", "fall-2013");
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
         });
