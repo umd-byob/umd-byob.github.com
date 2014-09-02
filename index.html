@@ -169,31 +169,28 @@
 
         // Schedule buttons
         $("#current-link").click(function(e) {
-            window.location.hash = '';
-            window.history.pushState(null, "BYOB: Current schedule", "");
+            history.pushState(null, "BYOB: Current schedule", "#");
             $("#schedule .schedule-section").hide();
             $("#schedule #current").show();
         });
         $("#spring-2014-link").click(function(e) {
-            window.location.hash = 'spring-2014';
-            window.history.pushState(null, "BYOB: Spring 2014", "spring-2014");
+            history.pushState(null, "BYOB: Spring 2014", "#spring-2014");
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
         });
         $("#fall-2013-link").click(function(e) {
-            window.location.hash = 'fall-2013';
-            window.history.pushState(null, "BYOB: Fall 2013", "fall-2013");
+            history.pushState(null, "BYOB: Fall 2013", "#fall-2013");
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
         });
 
         // Load Spring 2014 schedule if set in location
-        if (window.location.hash == "#spring-2014") {
+        if (location.hash == "#spring-2014") {
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
         }
         // Load Fall 2013 if set in location
-        if (window.location.hash == "#fall-2013") {
+        if (location.hash == "#fall-2013") {
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
         }
