@@ -20,6 +20,9 @@ body {
 a.link {
     color: #BF85CC;
 }
+a.link.selected {
+    color: #E76690;
+}
 a.link:hover {
     color: #914E89;
 }

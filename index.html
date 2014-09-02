@@ -27,7 +27,7 @@
 
     <!-- menu -->
     <div id='menu'>
-        <a id='current-link' class='link' href='#'>Current</a> |
+        <a id='current-link' class='link selected' href='#'>Current</a> |
         <a id='spring-2014-link' class='link' href='#spring-2014'>Spring 2014</a> |
         <a id='fall-2013-link' class='link' href='#fall-2013'>Fall 2013</a>
     </div>
@@ -172,16 +172,22 @@
             //history.pushState(null, "BYOB: Current schedule", "/");
             $("#schedule .schedule-section").hide();
             $("#schedule #current").show();
+            $(".link").removeClass('selected');
+            $(this).addClass('selected')
         });
         $("#spring-2014-link").click(function(e) {
             //history.pushState(null, "BYOB: Spring 2014", "/#spring-2014");
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
+            $(".link").removeClass('selected');
+            $(this).addClass('selected')
         });
         $("#fall-2013-link").click(function(e) {
             //history.pushState(null, "BYOB: Fall 2013", "/#fall-2013");
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
+            $(".link").removeClass('selected');
+            $(this).addClass('selected')
         });
 
         // Load Spring 2014 schedule if set in location
