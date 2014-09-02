@@ -7,7 +7,7 @@
     <title>University of Maryland - Bring Your Own Bioinformatics (UMD BYOB)</title>
     <link rel='stylesheet' href='resources/css/theme-8bit-base.css' />
     <link rel='stylesheet' href='resources/css/theme-8bit-dark.css' />
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
     <div id='title-container'>
@@ -28,8 +28,8 @@
     <!-- menu -->
     <div id='menu'>
         <a id='current-link' class='link' href='#'>Current</a> |
-        <a id='spring-2014-link' class='link' href='#'>Spring 2014</a> |
-        <a id='fall-2013-link' class='link' href='#'>Fall 2013</a>
+        <a id='spring-2014-link' class='link' href='#spring-2014'>Spring 2014</a> |
+        <a id='fall-2013-link' class='link' href='#fall-2013'>Fall 2013</a>
     </div>
 
     <!-- schedule -->
@@ -169,17 +169,17 @@
 
         // Schedule buttons
         $("#current-link").click(function(e) {
-            history.pushState(null, "BYOB: Current schedule", "/");
+            //history.pushState(null, "BYOB: Current schedule", "/");
             $("#schedule .schedule-section").hide();
             $("#schedule #current").show();
         });
         $("#spring-2014-link").click(function(e) {
-            history.pushState(null, "BYOB: Spring 2014", "/#spring-2014");
+            //history.pushState(null, "BYOB: Spring 2014", "/#spring-2014");
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
         });
         $("#fall-2013-link").click(function(e) {
-            history.pushState(null, "BYOB: Fall 2013", "/#fall-2013");
+            //history.pushState(null, "BYOB: Fall 2013", "/#fall-2013");
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
         });
