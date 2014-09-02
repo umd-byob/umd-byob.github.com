@@ -194,11 +194,15 @@
         if (location.hash == "#spring-2014") {
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
+            $(".link").removeClass('selected');
+            $("#spring-2014-link").addClass('selected')
         }
         // Load Fall 2013 if set in location
         if (location.hash == "#fall-2013") {
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
+            $(".link").removeClass('selected');
+            $("#fall-2013-link").addClass('selected')
         }
     });
     </script>
