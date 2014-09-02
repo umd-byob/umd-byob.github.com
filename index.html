@@ -35,7 +35,7 @@
     <!-- schedule -->
     <div id='schedule'>
         <!-- Current schedule -->
-        <div id='current' style='height: 450px;'>
+        <div id='current' class='schedule-section' style='height: 450px;'>
             <div class='schedule-header'>Schedule (Fall 2014)</div>
             <ul></ul>
         </div>
@@ -159,7 +159,7 @@
             success: function(authors) {
                 loadSchedule("json/schedule/fall-2014.json", authors, "#current");
                 loadSchedule("json/schedule/spring-2014.json", authors, "#spring-2014");
-                loadSchedule("json/schedule/fall-2013.json", authors, "fall-2013");
+                loadSchedule("json/schedule/fall-2013.json", authors, "#fall-2013");
             },
             error: function (jq, status, err) {
                 console.log("Error loading author information; check JSON syntax");
