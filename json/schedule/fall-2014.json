@@ -1,0 +1,92 @@
+[
+    {
+        "date": "9/02",
+        "author": "",
+        "title": "Intro Meeting",
+        "url": "http://khughitt.github.io/slidify-byob-intro/#1"
+    },
+    {
+        "date": "9/09",
+        "author": "Chris Hill",
+        "title": "Unix command line tools: tips and tricks",
+        "url": ""
+    },
+    {
+        "date": "9/16",
+        "author": "Will Gammerdinger",
+        "title": "The NCGAS Mason Cluster and the Scholarly Data Archive",
+        "url": ""
+    },
+    {
+        "date": "9/23",
+        "author": "Josie Reinhardt",
+        "title": "SNP Calling with RNA-Seq data",
+        "url": "https://github.com/umd-byob/presentations/tree/master/2013/0924-RNAseq-SNPs"
+    },
+    {
+        "date": "9/30",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "10/07",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "10/14",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "10/21",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "10/28",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "11/04",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "11/11",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "11/18",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "11/25",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "12/02",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    },
+    {
+        "date": "12/09",
+        "author": "",
+        "title": "TBA",
+        "url": ""
+    }
+]
