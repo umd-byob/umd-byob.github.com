@@ -1,0 +1,17 @@
+[
+    {
+        "date": "2/10",
+        "author": "Kevin Nyberg",
+        "title": "Choosing an expression threshold for your RNA-Seq data"
+    },
+    {
+        "date": "2/17",
+        "author": "Keith Hughitt",
+        "title": "Interactive data analysis using Shiny"
+    },
+    {
+        "date": "2/24",
+        "author": "Will Gammerdinger",
+        "title": "PROVEAN: A tool for predicting functional impacts of nonsynonymous mutations"
+    }
+]
