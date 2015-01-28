@@ -7,11 +7,13 @@
     {
         "date": "2/17",
         "author": "Keith Hughitt",
-        "title": "Interactive data analysis using Shiny"
+        "title": "Interactive data analysis using Shiny",
+        "room": "MCB1123"
     },
     {
         "date": "2/24",
         "author": "Will Gammerdinger",
-        "title": "PROVEAN: A tool for predicting functional impacts of nonsynonymous mutations"
+        "title": "PROVEAN: A tool for predicting functional impacts of nonsynonymous mutations",
+        "room": "MCB1123"
     }
 ]

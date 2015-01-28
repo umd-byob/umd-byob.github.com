@@ -40,6 +40,11 @@ a.link:hover {
     color: #CF4F88;
 }
 
+.room-change {
+    color: #CF4F88;
+}
+
+
 /** schedule **/
 .schedule-header {
     color: #BF85CC;
