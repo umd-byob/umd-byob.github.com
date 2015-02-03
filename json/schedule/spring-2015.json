@@ -2,18 +2,85 @@
     {
         "date": "2/10",
         "author": "Kevin Nyberg",
-        "title": "Choosing an expression threshold for your RNA-Seq data"
+        "title": "Choosing an expression threshold for your RNA-Seq data",
+        "room": "BRB3101",
+        "url": ""
     },
     {
         "date": "2/17",
         "author": "Keith Hughitt",
         "title": "Interactive data analysis using Shiny",
-        "room": "MCB1123"
+        "room": "MCB2119",
+        "url": ""
     },
     {
         "date": "2/24",
         "author": "Will Gammerdinger",
         "title": "PROVEAN: A tool for predicting functional impacts of nonsynonymous mutations",
-        "room": "MCB1123"
+        "room": "MCB2119",
+        "url": ""
+    },
+    {
+        "date": "3/3",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "BRB3101",
+        "url": ""
+    },
+    {
+        "date": "3/10",
+        "author": "TBD",
+        "title": "",
+        "room": "MCB2119",
+        "url": ""
+    },
+    {
+        "date": "3/24",
+        "author": "TBD"
+        "title": "TBD",
+        "room": "MCB1123",
+        "url": ""
+    },
+    {
+        "date": "3/31",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "BRB3101",
+        "url": ""
+    },
+    {
+        "date": "4/7",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "BRB3101",
+        "url": ""
+    },
+    {
+        "date": "4/14",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "BRB3101",
+        "url": ""
+    },
+    {
+        "date": "4/21",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "BRB3101",
+        "url": ""
+    },
+    {
+        "date": "4/28",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "TBD",
+        "url": ""
+    },
+    {
+        "date": "5/5",
+        "author": "TBD",
+        "title": "TBD",
+        "room": "BRB3101",
+        "url": ""
     }
 ]
