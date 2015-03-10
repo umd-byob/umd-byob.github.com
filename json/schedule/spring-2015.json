@@ -15,13 +15,13 @@
         "date": "2/24",
         "author": "Will Gammerdinger",
         "title": "PROVEAN: A tool for predicting functional impacts of nonsynonymous mutations",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/raw/master/2015/0224-Provean-mutation-effects/PROVEAN_BYOB.pptx"
     },
     {
         "date": "3/3",
         "author": "Keith Hughitt",
         "title": "Interactive data analysis using Shiny",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/tree/master/2015/0303-shiny-interactive-data"
     },
     {
         "date": "3/10",
@@ -49,7 +49,7 @@
     },
     {
         "date": "4/14",
-        "author": "Tom Peterson",
+        "author": "Thomas Peterson",
         "title": "Using Annovar to annotate genetic variants",
         "url": ""
     },
