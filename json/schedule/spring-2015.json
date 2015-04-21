@@ -51,13 +51,13 @@
         "date": "4/14",
         "author": "Thomas Peterson",
         "title": "Using Annovar to annotate genetic variants",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/tree/master/2015/0414-Annovar-annotate-genetic-variants"
     },
     {
         "date": "4/21",
         "author": "Josie Reinhardt",
         "title": "Using DELLY to annotate CNVs in genomic resequencing data",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/tree/master/2015/0421-DELLY-annotate-CNVs"
     },
     {
         "date": "4/28",
