@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Keith Hughitt",
+        "date": "9/10",
+        "title": "Writing reproducible manuscripts with RMarkdown",
+        "url": ""
+    },
+    {
+        "date": "9/24",
+        "author": "Jonathan Goodson",
+        "title": "Jupyter Notebook: Web interface for interactive Python/R/Julia/Octave scripting with integrated documentation, visualization, and sharing",
+        "url": ""
+    },
+    {
+        "date": "10/08",
+        "author": "Ryan Dale",
+        "title": "Reproducible bioinformatics workflows with Snakemake",
+        "url": ""
+    },
+    {
+        "date": "10/22",
+        "author": "Kevin Nyberg",
+        "title": "Calculating allele-specific expression with RNA-seq",
+        "url": ""
+    },
+    {
+        "date": "11/05",
+        "author": "TBD",
+        "title": "TBD",
+        "url": ""
+    },
+    {
+        "date": "11/19",
+        "author": "TBD",
+        "title": "TBD",
+        "url": ""
+    },
+    {
+        "date": "12/03",
+        "author": "TBD",
+        "title": "TBD",
+        "url": ""
+    }
+]
