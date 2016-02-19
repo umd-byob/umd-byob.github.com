@@ -1,0 +1,32 @@
+[
+    {
+        "date": "03/01",
+        "author": "Kevin Nyberg",
+        "title": "Allele-specific expression of RNA-Seq data using Kallisto",
+        "url": ""
+    },
+    {
+        "date": "03/15",
+        "author": "Keith Hughitt",
+        "title": "Labnote: A simple and flexible electronic lab notebook",
+        "url": ""
+    },
+    {
+        "date": "03/29",
+        "author": "Jonathan Goodson",
+        "title": "TBD",
+        "url": ""
+    },
+    {
+        "date": "04/12",
+        "author": "Will Gammerdinger",
+        "title": "Drop Anchor: Anchoring a genome assembly using Chromonomer",
+        "url": ""
+    },
+    {
+        "date": "04/26",
+        "author": "Ashton Trey Belew",
+        "title": "HPGLTools: Helper functions for high-throughput data analysis in R",
+        "url": "https://github.com/elsayed-lab/hpgltools"
+    }
+]
