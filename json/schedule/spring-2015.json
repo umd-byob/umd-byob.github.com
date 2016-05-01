@@ -4,13 +4,7 @@
         "author": "Kevin Nyberg",
         "title": "Choosing an expression threshold for your RNA-Seq data",
         "url": "https://github.com/umd-byob/presentations/raw/master/2015/0210-RNA-Seq_expression_threshold/BYOB_2-10-15.pptx"
-    },
-    {
-        "date": "2/17",
-        "author": "",
-        "title": "Canceled due to inclement weater",
-        "url": ""
-    },
+    }
     {
         "date": "2/24",
         "author": "Will Gammerdinger",
@@ -40,13 +34,7 @@
         "author": "Sarah Allard",
         "title": "Using amplicon sequencing to analyze microbial community structure and diversity",
         "url": "https://github.com/umd-byob/presentations/raw/master/2015/0331-Amplicon-sequencing-microbial-communities/Allard_BYOB.pptx"
-    },
-    {
-        "date": "4/7",
-        "author": "",
-        "title": "Canceled due to power outage",
-        "url": ""
-    },
+    }
     {
         "date": "4/14",
         "author": "Thomas Peterson",
@@ -63,12 +51,6 @@
         "date": "4/28",
         "author": "Ian Misner",
         "title": "Intro to Deepthought2, the newest HPC cluster at UMD",
-        "url": ""
-    },
-    {
-        "date": "5/5",
-        "author": "TBD",
-        "title": "TBD",
         "url": ""
     }
 ]

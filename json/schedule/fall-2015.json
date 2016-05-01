@@ -9,36 +9,18 @@
         "date": "9/24",
         "author": "Jonathan Goodson",
         "title": "Basics of tree manipulation and visualization in Python using ETE2",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/tree/master/2015/0924-trees-with-ete2"
     },
     {
         "date": "10/08",
         "author": "Ryan Dale",
         "title": "Reproducible bioinformatics workflows with Snakemake",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/tree/master/2015/1008-snakemake"
     },
     {
         "date": "10/22",
         "author": "Kevin Nyberg",
         "title": "Calculating allele-specific expression with RNA-seq",
-        "url": ""
-    },
-    {
-        "date": "11/05",
-        "author": "TBD",
-        "title": "TBD",
-        "url": ""
-    },
-    {
-        "date": "11/19",
-        "author": "TBD",
-        "title": "TBD",
-        "url": ""
-    },
-    {
-        "date": "12/03",
-        "author": "TBD",
-        "title": "TBD",
-        "url": ""
+        "url": "https://github.com/umd-byob/presentations/raw/master/2015/1022-allele-specific-expression/1022-AlleleSpecificExpression.pptx"
     }
 ]
