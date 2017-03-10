@@ -24,12 +24,13 @@
         <!-- source: http://www.spreadshirt.com/beer-8bit-C3376A16153836#/ -->
         <img id='title-right-img-b' src='resources/img/8bit_beer.png'
             alt='beer mug' />
-        <div id='meeting-info'>Meetings: Every other Tuesday @ 4pm (BRB 3101)</div>
+        <div id='meeting-info'>Meetings: Every other Monday @ 5pm (BRB 3101)</div>
     </div>
 
     <!-- menu -->
     <div id='menu'>
         <a id='current-link' class='link selected' href='#'>Current</a> |
+        <a id='sprint-2016-link' class='link selected' href='#'>Spring 2016</a> |
         <a id='fall-2015-link' class='link' href='#fall-2015'>Fall 2015</a> |
         <a id='spring-2015-link' class='link' href='#spring-2015'>Spring 2015</a> |
         <a id='fall-2014-link' class='link' href='#fall-2014'>Fall 2014</a> |
@@ -45,6 +46,10 @@
             <ul></ul>
         </div>
         <!-- Previous semesters -->
+        <div id='spring-2016' class='schedule-section' style='display:none;'>
+            <div class='schedule-header'>Schedule (Spring 2016)</div>
+            <ul></ul>
+        </div>
         <div id='fall-2015' class='schedule-section' style='display:none;'>
             <div class='schedule-header'>Schedule (Fall 2015)</div>
             <ul></ul>
@@ -71,7 +76,7 @@
     <div id='footer'>
         <!-- Footer links -->
         <div id='footer-links'>
-            <a class='link' href='mailto:khughitt@umd.edu'>Contact</a> |
+            <a class='link' href='mailto:jworley@umd.edu'>Contact</a> |
             <a class='link' href='https://groups.google.com/forum/#!forum/umd-byob'>Mailing List</a> |
             <a class='link' href='https://github.com/umd-byob/presentations'>Github</a>
         </div>
@@ -179,7 +184,8 @@
         $.ajax({
             url: "json/authors.json", 
             success: function(authors) {
-                loadSchedule("json/schedule/spring-2016.json", authors, "#current");
+                loadSchedule("json/schedule/spring-2017.json", authors, "#current");
+                loadSchedule("json/schedule/spring-2016.json", authors, "#spring-2016");
                 loadSchedule("json/schedule/fall-2015.json", authors, "#fall-2015");
                 loadSchedule("json/schedule/spring-2015.json", authors, "#spring-2015");
                 loadSchedule("json/schedule/fall-2014.json", authors, "#fall-2014");
@@ -197,6 +203,13 @@
             //history.pushState(null, "BYOB: Current schedule", "/");
             $("#schedule .schedule-section").hide();
             $("#schedule #current").show();
+            $(".link").removeClass('selected');
+            $(this).addClass('selected')
+        });
+        $("#spring-2016-link").click(function(e) {
+            //history.pushState(null, "BYOB: Fall 2014", "/#spring-2015");
+            $("#schedule .schedule-section").hide();
+            $("#schedule #spring-2016").show();
             $(".link").removeClass('selected');
             $(this).addClass('selected')
         });
@@ -237,6 +250,12 @@
         });
 
         // Load schedule if set in location 
+        if (location.hash == "#spring-2017") {
+            $("#schedule .schedule-section").hide();
+            $("#schedule #spring-2017").show();
+            $(".link").removeClass('selected');
+            $("#spring-2017-link").addClass('selected')
+        }
         if (location.hash == "#spring-2016") {
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2016").show();
@@ -261,14 +280,12 @@
             $(".link").removeClass('selected');
             $("#fall-2014-link").addClass('selected')
         }
-        // Load Spring 2014 schedule if set in location
         if (location.hash == "#spring-2014") {
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2014").show();
             $(".link").removeClass('selected');
             $("#spring-2014-link").addClass('selected')
         }
-        // Load Fall 2013 if set in location
         if (location.hash == "#fall-2013") {
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2013").show();
