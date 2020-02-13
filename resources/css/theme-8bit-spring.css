@@ -55,7 +55,7 @@ a.link:hover {
     color: #ff1298;
 }
 
-#current-link.selected {
+a.link.selected {
     color: #cc0e7a;
 }
 
