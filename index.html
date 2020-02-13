@@ -24,13 +24,13 @@
         <!-- source: https://www.spreadshirt.com/beer-8bit-C3376A16153836#/ -->
         <img id='title-right-img-b' src='resources/img/8bit_beer.png'
             alt='beer mug' />
-        <div id='meeting-info'>Meetings: Every other Wednesday @ 5pm (BRB 3101)</div>
+        <div id='meeting-info'>Presentation archive.</div>
     </div>
 
     <!-- menu -->
     <div id='menu'>
-        <a id='current-link' class='link selected' href='#'>Current</a> |
-        <a id='spring-2016-link' class='link' href='#'>Spring 2016</a> |
+        <a id='fall-2017-link' class='link selected' href='#fall-2017'>Fall 2017</a> |
+        <a id='spring-2016-link' class='link' href='#spring-2016'>Spring 2016</a> |
         <a id='fall-2015-link' class='link' href='#fall-2015'>Fall 2015</a> |
         <a id='spring-2015-link' class='link' href='#spring-2015'>Spring 2015</a> |
         <a id='fall-2014-link' class='link' href='#fall-2014'>Fall 2014</a> |
@@ -40,12 +40,10 @@
 
     <!-- schedule -->
     <div id='schedule'>
-        <!-- Current schedule -->
-        <div id='current' class='schedule-section' style='height: 375px;'>
+        <div id='fall-2017' class='schedule-section' style='height: 375px;'>
             <div class='schedule-header'>Schedule (Spring 2017)</div>
             <ul></ul>
         </div>
-        <!-- Previous semesters -->
         <div id='spring-2016' class='schedule-section' style='display:none;'>
             <div class='schedule-header'>Schedule (Spring 2016)</div>
             <ul></ul>
@@ -184,7 +182,7 @@
         $.ajax({
             url: "json/authors.json", 
             success: function(authors) {
-                loadSchedule("json/schedule/spring-2017.json", authors, "#current");
+                loadSchedule("json/schedule/spring-2017.json", authors, "#fall-2017");
                 loadSchedule("json/schedule/spring-2016.json", authors, "#spring-2016");
                 loadSchedule("json/schedule/fall-2015.json", authors, "#fall-2015");
                 loadSchedule("json/schedule/spring-2015.json", authors, "#spring-2015");
@@ -199,22 +197,22 @@
         });
 
         // Schedule buttons
-        $("#current-link").click(function(e) {
-            //history.pushState(null, "BYOB: Current schedule", "/");
+        $("#fall-2017-link").click(function(e) {
+            //history.pushState(null, "BYOB: Fall 2017", "/#fall-2017");
             $("#schedule .schedule-section").hide();
-            $("#schedule #current").show();
+            $("#schedule #fall-2017").show();
             $(".link").removeClass('selected');
             $(this).addClass('selected')
         });
         $("#spring-2016-link").click(function(e) {
-            //history.pushState(null, "BYOB: Fall 2014", "/#spring-2015");
+            //history.pushState(null, "BYOB: Fall 2014", "/#spring-2016");
             $("#schedule .schedule-section").hide();
             $("#schedule #spring-2016").show();
             $(".link").removeClass('selected');
             $(this).addClass('selected')
         });
         $("#fall-2015-link").click(function(e) {
-            //history.pushState(null, "BYOB: Fall 2014", "/#spring-2015");
+            //history.pushState(null, "BYOB: Fall 2014", "/#fall-2015");
             $("#schedule .schedule-section").hide();
             $("#schedule #fall-2015").show();
             $(".link").removeClass('selected');
