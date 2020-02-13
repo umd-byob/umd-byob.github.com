@@ -10,7 +10,7 @@ from urllib import request
 import json
 
 # grab site
-www=request.urlopen('http://umd-byob.github.io/').read()
+www=request.urlopen('https://umd-byob.github.io/').read()
 soup = BeautifulSoup(www)
 
 # each list item is a single day with 1+ schedule items
