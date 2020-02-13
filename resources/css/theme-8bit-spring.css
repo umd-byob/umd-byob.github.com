@@ -15,7 +15,7 @@ body {
   font-family: 'Fredericka the Great';
   font-style: normal;
   font-weight: 400;
-  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(http://themes.googleusercontent.com/static/fonts/frederickathegreat/v3/7Es8Lxoku-e5eOZWpxw18vc3vBAn7YvtW9hNjxWZBR0.woff) format('woff');
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(https://themes.googleusercontent.com/static/fonts/frederickathegreat/v3/7Es8Lxoku-e5eOZWpxw18vc3vBAn7YvtW9hNjxWZBR0.woff) format('woff');
 }
 
 /** title **/
